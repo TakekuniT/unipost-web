@@ -3,44 +3,55 @@ import Pricing from "@/components/Pricing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { FiShare2, FiClock, FiVideo } from "react-icons/fi";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white text-slate-900">
       <Navbar />
 
-      {/* Hero Section: Explains the "Description of Goods" */}
+      {/* HERO */}
       <Hero
         title="Sync Your Socials with UniPost"
-        subtitle="The all-in-one automation tool for creators. Schedule, sync, and post to TikTok, YouTube, Instagram, and more from a single dashboard."
+        subtitle="Schedule once, publish everywhere. UniPost helps creators automate posting to TikTok, YouTube, Instagram, and more — all from one clean dashboard."
       />
 
-      {/* Features Section: Helps Stripe understand the product value */}
-      <section id="features" className="py-20 bg-gray-50">
+      {/* FEATURES */}
+      <section
+        id="features"
+        className="py-28 bg-gradient-to-b from-slate-50 to-white"
+      >
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Built for Growth
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-black mb-4">
+              Built for Modern Creators
+            </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Powerful automation tools designed to save time and grow faster.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard
-              icon="🚀"
+              icon={<FiShare2 />}
               title="Multi-Platform Sync"
-              desc="Post once, publish everywhere. We handle the formatting for each platform."
+              desc="Post once and publish everywhere. UniPost automatically adapts your content for each platform."
             />
             <FeatureCard
-              icon="⏰"
+              icon={<FiClock />}
               title="Smart Scheduling"
-              desc="Queue your content for the perfect time, even while you're offline."
+              desc="Queue content ahead of time and publish at the perfect moment — even while you're offline."
             />
             <FeatureCard
-              icon="💎"
-              title="Watermark Removal"
-              desc="Export clean, professional videos without app branding."
+              icon={<FiVideo />}
+              title="Clean Exports"
+              desc="Remove watermarks and branding to deliver professional, platform-ready videos."
             />
           </div>
         </div>
       </section>
 
-      {/* Pricing Section: Mandatory for Stripe Verification */}
+      {/* PRICING */}
       <Pricing />
 
       <Footer />
@@ -48,20 +59,29 @@ export default function Home() {
   );
 }
 
+/* ---------------- Feature Card ---------------- */
+
 function FeatureCard({
   icon,
   title,
   desc,
 }: {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   desc: string;
 }) {
   return (
-    <div className="p-8 bg-white rounded-2xl shadow-sm border border-gray-100 transition hover:shadow-md">
-      <div className="text-4xl mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600 leading-relaxed">{desc}</p>
+    <div className="group relative p-8 bg-white rounded-3xl border border-slate-200 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 mb-6 group-hover:scale-105 transition">
+        <span className="text-2xl">{icon}</span>
+      </div>
+
+      <h3 className="text-xl font-bold mb-3">{title}</h3>
+
+      <p className="text-slate-600 leading-relaxed">{desc}</p>
+
+      {/* subtle hover ring */}
+      <div className="absolute inset-0 rounded-3xl ring-1 ring-transparent group-hover:ring-purple-500/20 transition pointer-events-none" />
     </div>
   );
 }
