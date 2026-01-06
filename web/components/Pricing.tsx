@@ -72,7 +72,8 @@ export default function Pricing() {
               />
               <Perk
                 icon={<FiShield className="text-purple-600" />}
-                text="No watermarks"
+                text="No watermarks on posts"
+                sub="Captions are still branded"
               />
               <Perk
                 icon={<FiGlobe className="text-purple-600" />}
@@ -85,8 +86,8 @@ export default function Pricing() {
 
           {/* ELITE */}
           <Card dark>
-            <PlanTitle>Elite</PlanTitle>
-            <Price dark>$24.99</Price>
+            <PlanTitle accent>Elite Agency</PlanTitle>
+            <Price dark>$29.99</Price>
 
             <PerkList>
               <Perk
