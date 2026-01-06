@@ -10,8 +10,8 @@ export default function RefundPolicy() {
             Refund & Cancellation Policy
           </h1>
           <p className="text-slate-600">
-            This policy explains how cancellations and refunds work for UniPost
-            subscriptions.
+            This policy explains how subscriptions, cancellations, and refunds
+            work for UniPost.
           </p>
         </header>
 
@@ -27,24 +27,34 @@ export default function RefundPolicy() {
           You may cancel your subscription at any time through your account
           settings in the UniPost app. After cancellation, you will continue to
           have access to paid features until the end of your current billing
-          cycle. No additional charges will occur after that period.
+          cycle.
+          <ul className="list-disc ml-6 mt-4 space-y-2 text-slate-600">
+            <li>
+              <strong>No Hidden Fees:</strong> There are no cancellation fees.
+              Upon cancellation, your account will automatically revert to the
+              <strong> Free</strong> tier at the end of the current billing
+              period.
+            </li>
+            <li>
+              No further charges will be applied after the billing cycle ends.
+            </li>
+          </ul>
         </Section>
 
         {/* Refunds */}
         <Section icon={<FiRefreshCcw />} title="3. Refunds">
           Because UniPost is a digital service, we generally do not provide
-          refunds for partially used billing periods. If you believe you were
-          charged in error, please contact us at{" "}
+          refunds for billing periods that have already begun. If you believe
+          you were charged in error, please contact us at{" "}
           <span className="font-semibold text-slate-900">
-            takekuni@tanemori.org
+            support@unipost.app
           </span>{" "}
           within 14 days of the charge. If approved, refunds will be issued to
           the original payment method within 5–10 business days.
         </Section>
 
-        {/* Footer note */}
         <p className="mt-16 text-sm text-slate-500">
-          Last updated: {new Date().toLocaleDateString()}
+          Last updated: January 2026
         </p>
       </div>
     </main>
@@ -70,7 +80,7 @@ function Section({
         </div>
         <h2 className="text-xl font-bold text-slate-900">{title}</h2>
       </div>
-      <p className="text-slate-600 leading-relaxed">{children}</p>
+      <div className="text-slate-600 leading-relaxed">{children}</div>
     </section>
   );
 }
