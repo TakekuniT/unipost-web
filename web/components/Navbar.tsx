@@ -8,7 +8,7 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-bold text-purple-600 tracking-tight"
         >
-          UniPost
+          UniCore
         </Link>
 
         <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600">

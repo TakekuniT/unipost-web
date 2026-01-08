@@ -12,8 +12,8 @@ export default function Home() {
 
       {/* HERO */}
       <Hero
-        title="Sync Your Socials with UniPost"
-        subtitle="Schedule once, publish everywhere. UniPost helps creators automate posting to TikTok, YouTube, Instagram, and more — all from one clean dashboard."
+        title="Sync Your Socials with UniCore"
+        subtitle="Schedule once, publish everywhere. UniCore helps creators automate posting to TikTok, YouTube, Instagram, and more — all from one clean dashboard."
       />
 
       {/* FEATURES */}
@@ -35,7 +35,7 @@ export default function Home() {
             <FeatureCard
               icon={<FiShare2 />}
               title="Multi-Platform Sync"
-              desc="Post once and publish everywhere. UniPost automatically adapts your content for each platform."
+              desc="Post once and publish everywhere. UniCore automatically adapts your content for each platform."
             />
             <FeatureCard
               icon={<FiClock />}

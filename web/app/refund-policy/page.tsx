@@ -11,13 +11,13 @@ export default function RefundPolicy() {
           </h1>
           <p className="text-slate-600">
             This policy explains how subscriptions, cancellations, and refunds
-            work for UniPost.
+            work for UniCore.
           </p>
         </header>
 
         {/* Subscriptions */}
         <Section icon={<FiCreditCard />} title="1. Subscriptions">
-          UniPost offers a recurring monthly subscription for the Creator Pro
+          UniCore offers a recurring monthly subscription for the Creator Pro
           plan. By subscribing, you authorize us to charge your selected payment
           method on a monthly basis until the subscription is canceled.
         </Section>
@@ -25,7 +25,7 @@ export default function RefundPolicy() {
         {/* Cancellation */}
         <Section icon={<FiXCircle />} title="2. Cancellation">
           You may cancel your subscription at any time through your account
-          settings in the UniPost app. After cancellation, you will continue to
+          settings in the UniCore app. After cancellation, you will continue to
           have access to paid features until the end of your current billing
           cycle.
           <ul className="list-disc ml-6 mt-4 space-y-2 text-slate-600">
@@ -43,11 +43,11 @@ export default function RefundPolicy() {
 
         {/* Refunds */}
         <Section icon={<FiRefreshCcw />} title="3. Refunds">
-          Because UniPost is a digital service, we generally do not provide
+          Because UniCore is a digital service, we generally do not provide
           refunds for billing periods that have already begun. If you believe
           you were charged in error, please contact us at{" "}
           <span className="font-semibold text-slate-900">
-            support@unipost.app
+            takekuni@tanemori.org
           </span>{" "}
           within 14 days of the charge. If approved, refunds will be issued to
           the original payment method within 5–10 business days.

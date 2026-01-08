@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         {/* Brand Info */}
         <div>
-          <h3 className="font-bold text-lg mb-4">UniPost</h3>
+          <h3 className="font-bold text-lg mb-4">UniCore</h3>
           <p className="text-sm text-gray-500">
             Simplifying social media publishing for modern creators.
           </p>
@@ -97,7 +97,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-gray-200 text-center text-xs text-gray-400">
-        © {currentYear} UniPost. Operated by Takekuni Tanemori. All rights
+        © {currentYear} UniCore. Operated by Takekuni Tanemori. All rights
         reserved.
       </div>
     </footer>

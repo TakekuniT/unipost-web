@@ -17,18 +17,18 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-slate-600">
-            This policy explains how UniPost handles data and privacy.
+            This policy explains how UniCore handles data and privacy.
           </p>
         </header>
 
         <Section icon={<FiLock />} title="Overview">
-          UniPost (formerly referred to as XPost during development) is a
-          developer application used to test and manage social media content
-          publishing across platforms such as Instagram, YouTube, and TikTok.
+          UniCore is a developer application used to test and manage social
+          media content publishing across platforms such as Instagram, YouTube,
+          and TikTok.
         </Section>
 
         <Section icon={<FiDatabase />} title="Information We Collect">
-          UniPost does not collect, store, or sell personal user data. When you
+          UniCore does not collect, store, or sell personal user data. When you
           connect a social media account, we temporarily receive access tokens
           provided by the respective platform solely to perform actions you
           explicitly authorize, such as uploading content.
@@ -44,18 +44,18 @@ export default function PrivacyPolicy() {
         </Section>
 
         <Section icon={<FiDatabase />} title="Data Storage">
-          UniPost does not permanently store personal information, login
+          UniCore does not permanently store personal information, login
           credentials, or access tokens beyond their required usage. Uploaded
           media files are processed temporarily and deleted after use.
         </Section>
 
         <Section icon={<FiShare2 />} title="Data Sharing">
-          UniPost does not sell, trade, or share user data with third parties.
+          UniCore does not sell, trade, or share user data with third parties.
         </Section>
 
         {/* 🔐 THIRD-PARTY SERVICES + GOOGLE DISCLOSURE */}
         <Section icon={<FiShield />} title="Third-Party Services">
-          UniPost interacts with third-party APIs including but not limited to:
+          UniCore interacts with third-party APIs including but not limited to:
           <ul className="list-disc ml-6 mt-3 space-y-1 text-slate-600">
             <li>Meta (Instagram and Facebook APIs)</li>
             <li>Google (YouTube API)</li>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
           </ul>
           <div className="mt-6 space-y-4 text-slate-600">
             <p>
-              <strong>Google API Disclosure:</strong> UniPost&apos;s use and
+              <strong>Google API Disclosure:</strong> UniCore&apos;s use and
               transfer of information received from Google APIs to any other app
               will adhere to the{" "}
               <a
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <p>
-              <strong>User Revocation:</strong> Users can revoke UniPost&apos;s
+              <strong>User Revocation:</strong> Users can revoke UniCore&apos;s
               access to their Google data at any time via the{" "}
               <a
                 href="https://myaccount.google.com/permissions"
