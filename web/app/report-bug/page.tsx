@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FiAlertCircle, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
+import { submitBug } from "../actions.ts";
 
 export default function ReportBug() {
   const [loading, setLoading] = useState(false);
@@ -40,7 +41,17 @@ export default function ReportBug() {
             </div>
           </div>
 
-          <form action={handleSubmit} className="space-y-6">
+          <form
+            action={async (formData) => {
+              try {
+                await submitBug(formData);
+                alert("Successfully submitted!");
+              } catch (e) {
+                alert("Something went wrong.");
+              }
+            }}
+            className="space-y-6"
+          >
             <div>
               <label className="block text-sm font-semibold mb-2">
                 What happened? *

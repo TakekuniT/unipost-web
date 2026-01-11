@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FiZap, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
+import { submitFeature } from "../actions.ts";
 
 export default function RequestFeature() {
   const [loading, setLoading] = useState(false);
@@ -39,7 +40,17 @@ export default function RequestFeature() {
             </div>
           </div>
 
-          <form action={handleSubmit} className="space-y-6">
+          <form
+            action={async (formData) => {
+              try {
+                await submitFeature(formData);
+                alert("Successfully submitted!");
+              } catch (e) {
+                alert("Something went wrong.");
+              }
+            }}
+            className="space-y-6"
+          >
             <div>
               <label className="block text-sm font-semibold mb-2">
                 Feature Name *
