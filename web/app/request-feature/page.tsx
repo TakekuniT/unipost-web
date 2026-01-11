@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FiZap, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
-import { submitFeature } from "../actions.ts";
+import { submitFeature } from "../actions";
 
 export default function RequestFeature() {
   const [loading, setLoading] = useState(false);

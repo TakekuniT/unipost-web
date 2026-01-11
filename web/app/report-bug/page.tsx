@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FiAlertCircle, FiChevronLeft } from "react-icons/fi";
 import Link from "next/link";
-import { submitBug } from "../actions.ts";
+import { submitBug } from "../actions";
 
 export default function ReportBug() {
   const [loading, setLoading] = useState(false);
