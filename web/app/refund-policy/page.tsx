@@ -44,13 +44,7 @@ export default function RefundPolicy() {
         {/* Refunds */}
         <Section icon={<FiRefreshCcw />} title="3. Refunds">
           Because UniCore is a digital service, we generally do not provide
-          refunds for billing periods that have already begun. If you believe
-          you were charged in error, please contact us at{" "}
-          <span className="font-semibold text-slate-900">
-            takekuni@tanemori.org
-          </span>{" "}
-          within 14 days of the charge. If approved, refunds will be issued to
-          the original payment method within 5–10 business days.
+          refunds for billing periods that have already begun.
         </Section>
 
         <p className="mt-16 text-sm text-slate-500">
