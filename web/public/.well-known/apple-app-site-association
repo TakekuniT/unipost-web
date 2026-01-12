@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "639V2AFT2F.com.takekunitanemori.UniCore"
+        ],
+        "components": [
+          {
+            "/": "/tiktok-callback/*"
+          }
+        ]
+      }
+    ]
+  }
+}
